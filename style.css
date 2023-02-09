@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Open+Sans&family=Outfit:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --magenta: hsl(300, 69%, 71%);
+    --mobile-width: 375px;
+    --desktop-width: 1400px;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--violet);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    background: url("./images/bg-mobile.svg") no-repeat;
+    
+}
+
+.container {
+    padding: 2rem 2.5rem;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.logo {
+    margin-bottom: 2rem;
+}
+
+.content-img img {
+    width: 100%;
+}
+
+.content-text {
+    text-align: center;
+}
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin: 2rem 0 1rem 0;
+    line-height: 2.4rem;
+    font-size: 1.5rem;
+}
+
+p {
+    line-height: 1.7rem;
+    font-size: .9rem;
+}
+
+.btn {
+    padding: 1rem;
+    width: 70%;
+    border-radius: 2rem;
+    font-size: 1rem;
+    border: 1px solid var(--violet);
+    color: var(--magenta);
+    margin: 1.2rem 0;
+}
+
+.btn:active {
+    color: #fff;
+    background-color: var(--magenta);
+}
+
+.icon-container {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.icon-container > i {
+    font-size: 1.5rem;
+}
+
+.icon-container img:active {
+    background-color: var(--magenta);
+}
+
+.logo-box {
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.logo-box:active {
+    border-color: var(--magenta);
+    color: var(--magenta);
+}
+
+
+@media screen and (min-width: 1200px) {
+    main {
+        background: url("./images/bg-desktop.svg");
+    }
+
+    .logo img{
+        width: 250px;
+    }
+
+    .container {
+        padding: 3rem 4rem;
+    }
+
+    .col-1 {
+        width: 60%;
+    }
+
+    .col-2 {
+        width: 40%;
+    }
+
+    .content {
+        display: flex;
+    }
+
+    .content-text {
+        padding: 0 2rem;
+        text-align: start;
+    }
+
+    .btn {
+        width: 40%;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .icon-container {
+        justify-content: end;
+    }
+}
